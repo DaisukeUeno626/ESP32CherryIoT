@@ -12,17 +12,34 @@ const int spkrPin = 3; //3:ConnectorA 4:ConnectorB
 #define RA 440
 #define _RA 466.164
 #define TI 493.883
+#define SIb 466.164
 #define octDO 523.251
 
 void playmusic(){
-  ledcWriteTone(spkrPin, DO);
-  delay(250);
-  ledcWriteTone(spkrPin, RE);
-  delay(250);
-  ledcWriteTone(spkrPin, MI);
-  delay(250);
+  ledcWriteTone(spkrPin, SO);
+  delay(200);
+  ledcWriteTone(spkrPin, RA);
+  delay(200);
+  ledcWriteTone(spkrPin, SIb);
+  delay(400);
+  ledcWriteTone(spkrPin, RA);
+  delay(200);
+  ledcWriteTone(spkrPin, SO);
+  delay(200);
   ledcWriteTone(spkrPin, 0); // no sound
-  delay(250);
+  delay(200);
+  ledcWriteTone(spkrPin, SO);
+  delay(200);
+  ledcWriteTone(spkrPin, RA);
+  delay(200);
+  ledcWriteTone(spkrPin, SIb);
+  delay(400);
+  ledcWriteTone(spkrPin, RA);
+  delay(200);
+  ledcWriteTone(spkrPin, SO);
+  delay(200);
+  ledcWriteTone(spkrPin, RA);
+  delay(200);
 }
 
 void setup() {
