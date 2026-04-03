@@ -10,7 +10,7 @@ void loop(){
   if (digitalRead(ruptPin)==LOW) {
     Serial.println("Interrupt!");
   } else {
-    Serial.println("...");
+    Serial.println("No");
   }
   delay(500);
 }
