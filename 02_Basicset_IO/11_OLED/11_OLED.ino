@@ -16,17 +16,20 @@ void setup()
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     for(;;); //Infinite loop when screen initialization fails
   }
+int y = 20;
+int dy = 2;
+ 
 
-  display.clearDisplay();
+ display.clearDisplay();
 
   display.setTextSize(2);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 5);
-  display.print(F("Hello"));
-  display.setCursor(0, 25);
-  display.print(F("ESP32"));
-  display.setCursor(0, 45);
-  display.print(F("CherryIoT"));
+  display.setCursor(0, 0);
+ display.println("<3");
+  display.setCursor(0, 20);
+ display.println("^_^");
+  display.setCursor(0, 40);
+display.println(">_<");
 
   display.display();
 }
